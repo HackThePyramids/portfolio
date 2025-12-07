@@ -1,0 +1,78 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background: #0a0e27;
+  border-bottom: 1px solid rgba(31, 203, 255, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-icon {
+  width: 42px;
+  height: 42px;
+  filter: drop-shadow(0 0 8px rgba(31, 203, 255, 0.5));
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  font-family: 'Kode Mono', monospace;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.nav-link:hover {
+  color: #1fcbff;
+}
+
+.nav-link.active {
+  color: #00c4ff;
+  text-shadow: 0 0 8px rgba(31, 203, 255, 0.8);
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #00c4ff;
+  box-shadow: 0 0 8px rgba(31, 203, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-link {
+    font-size: 0.875rem;
+  }
+}

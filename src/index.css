@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400;700&display=swap');
+
+:root {
+  font-family: 'Kode Mono', 'Roboto Mono', monospace;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: #0a0e27;
+  color: #ffffff;
+  overflow: hidden;
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for webkit browsers */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+}

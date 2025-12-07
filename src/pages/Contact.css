@@ -1,0 +1,134 @@
+.contact-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0e27;
+  padding: 2rem;
+  overflow: hidden;
+  transform: translateY(-50px);
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.terminal-box-contact {
+  border: 1px solid #000;
+  box-shadow: 0 0 11.9px 9px rgba(129, 205, 228, 0.31);
+  padding: 2rem;
+  background: rgba(10, 14, 39, 0.8);
+  border-radius: 8px;
+}
+
+.terminal-header-contact {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(31, 203, 255, 0.2);
+}
+
+.command-line-contact {
+  font-family: 'Kode Mono', monospace;
+  font-size: 1.5rem;
+  color: #ffffff;
+  display: block;
+}
+
+.contact-content {
+  padding: 2rem 0;
+}
+
+.contact-title {
+  font-family: 'Kode Mono', monospace;
+  font-size: 3rem;
+  color: #1fcbff;
+  text-shadow: 0 1px 16.7px #1fcbff;
+  margin: 0 0 2rem 0;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.contact-method {
+  padding: 1.5rem;
+  background: rgba(31, 203, 255, 0.05);
+  border: 1px solid rgba(31, 203, 255, 0.2);
+  border-radius: 6px;
+}
+
+.contact-prompt {
+  font-family: 'Kode Mono', monospace;
+  font-size: 2.25rem;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.contact-emphasis {
+  color: #1fcbff;
+  text-shadow: 0 0 8px rgba(31, 203, 255, 0.6);
+}
+
+.contact-link {
+  color: #00c4ff;
+  text-shadow: 0 0 8px rgba(31, 203, 255, 0.6);
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #1fcbff;
+  text-shadow: 0 0 15px rgba(31, 203, 255, 0.8);
+}
+
+.contact-divider {
+  text-align: center;
+  font-family: 'Kode Mono', monospace;
+  font-size: 1.5rem;
+  color: #666;
+  margin: 1rem 0;
+}
+
+.contact-note {
+  font-family: 'Kode Mono', monospace;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 2rem 0 0 0;
+  text-align: center;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 1rem;
+  }
+
+  .terminal-box-contact {
+    padding: 1.5rem;
+  }
+
+  .contact-title {
+    font-size: 1.75rem;
+  }
+
+  .contact-prompt {
+    font-size: 1.25rem;
+  }
+
+  .contact-note {
+    font-size: 1rem;
+  }
+
+  .command-line-contact {
+    font-size: 1rem;
+  }
+}

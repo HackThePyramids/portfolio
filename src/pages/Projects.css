@@ -1,0 +1,136 @@
+.projects-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0e27;
+  padding: 2rem;
+  overflow: hidden;
+  flex-direction: column;
+  transform: translateY(-80px);
+}
+
+.projects-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+.terminal-box-projects {
+  border: 1px solid #000;
+  box-shadow: 0 0 11.9px 9px rgba(129, 205, 228, 0.31);
+  padding: 1.5rem;
+  background: rgba(10, 14, 39, 0.8);
+  border-radius: 8px;
+}
+
+.terminal-header-projects {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(31, 203, 255, 0.2);
+}
+
+.command-line-projects {
+  font-family: 'Kode Mono', monospace;
+  font-size: 1.5rem;
+  color: #ffffff;
+  display: block;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+.project-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.25rem;
+  background: rgba(31, 203, 255, 0.05);
+  border: 1px solid rgba(31, 203, 255, 0.1);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.project-item:hover {
+  background: rgba(31, 203, 255, 0.1);
+  border-color: rgba(31, 203, 255, 0.3);
+  box-shadow: 0 0 15px rgba(31, 203, 255, 0.2);
+}
+
+.project-icon-wrapper {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+}
+
+.project-icon {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 3px 25px rgba(31, 203, 255, 0.5));
+}
+
+.project-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-title {
+  font-family: 'Kode Mono', monospace;
+  font-size: 1.75rem;
+  color: #1fcbff;
+  text-shadow: 0 1px 16.7px #1fcbff;
+  margin: 0 0 0.75rem 0;
+  font-weight: 400;
+}
+
+.project-description {
+  font-family: 'Kode Mono', monospace;
+  font-size: 0.875rem;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .projects-page {
+    padding: 1rem;
+  }
+
+  .terminal-box-projects {
+    padding: 1.5rem;
+  }
+
+  .project-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .project-icon-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+
+  .project-title {
+    font-size: 1.75rem;
+  }
+
+  .project-description {
+    font-size: 1rem;
+  }
+
+  .command-line-projects {
+    font-size: 1rem;
+  }
+}
